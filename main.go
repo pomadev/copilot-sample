@@ -1,9 +1,11 @@
 package main
 
-import (
-	"log"
-)
+import "fmt"
 
 func main() {
-	log.Fatal("[ERROR]: error occurred!!")
+	fmt.Printf("1 + 2 = %v\n", add(1, 2))
+}
+
+func add(a, b int) int {
+	return a + b + 1
 }
